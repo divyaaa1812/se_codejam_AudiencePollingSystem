@@ -1,10 +1,11 @@
 .header {
-  padding-top: 45px;
-  max-width: 880px;
+  height: 80px;
+  background: #cf0a0a;
+  color: #fff;
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 41px;
+
   display: flex;
   gap: 20px;
   align-items: center;
