@@ -1,16 +1,19 @@
 # se_codejam_AudiencePollingSystem
+
 Designed to engage your audience with live polls
 
 **OverView**
+
 - Description
 - Technologies
+- Website Link
 
 **Description**
-This Polling System will allow users in diffrent communities to interact together, creating a community system that can be used for making choices. exapmle: The community wants to host a block party! We need to decide on the type of music being played at the event. Using the polling system you can creaate a Poll titled "Block Party Music" in this poll you can have multiple options for users to choose from.
+
+Our community poll web app empowers your voice by allowing you to create and participate in polls on a wide range of topics. Make decisions as a community with our poll app. From choosing the next party music to selecting the best community project, we're here to democratize decision-making for you.
 
 **Technologies**
-- webpack
+
 - HTML
 - CSS
 - JavaScript
-
