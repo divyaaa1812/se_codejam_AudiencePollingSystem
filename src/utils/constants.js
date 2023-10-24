@@ -13,6 +13,3 @@ export const submitButton = document.querySelector(
 
 export const addNewPollModal = document.querySelector("#add-new-poll");
 export const createPollButton = document.querySelector("#add-new-poll-button");
-
-// export const pollTitle = document.querySelector(".profile__title");
-// export const pollSubtitle = document.querySelector(".profile__subtitle");
