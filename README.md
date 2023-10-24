@@ -2,7 +2,7 @@
 
 Designed to Create, share, and decide together with our live polls app.
 
-**OverView**
+**Overview**
 
 - Description
 - Technologies
