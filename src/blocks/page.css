@@ -1,10 +1,8 @@
-body {
-  margin: 0;
-}
-
 .page {
-  background-color: gray;
-  color: black;
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
 }
 
 .page__container {
@@ -17,7 +15,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
+}
+
+.content {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 51px;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 918px) {

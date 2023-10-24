@@ -8,6 +8,14 @@
     />
     <title>Audience Polling System</title>
     <link rel="shortcut icon" href="favicon.ico" />
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="page">
@@ -21,23 +29,49 @@
           <h1>Polling System</h1>
         </header>
         <main class="content page__container">
-          <section class="menu">
-            <div class="menu__sidebar-container">
-              <div class="menu__home">
+          <nav class="menu">
+            <ul class="menu__container">
+              <li class="menu__item">
+                <a class="menu__link" type="button">
+                  <img
+                    alt="Home icon"
+                    class="menu__image"
+                    src="<%=require('./images/home.svg')%>"
+                  />
+                  Home</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" type="button">
+                  <img
+                    alt="Home icon"
+                    class="menu__image"
+                    src="<%=require('./images/compass.svg')%>"
+                  />
+                  Discover</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" type="button">
+                  <img
+                    alt="Home icon"
+                    class="menu__image"
+                    src="<%=require('./images/bell.svg')%>"
+                  />
+                  Notification</a
+                >
+              </li>
+
+              <button class="menu__button" type="button">
                 <img
                   alt="Home icon"
-                  class="menu__home-image"
-                  src="<%=require('./images/home.png')%>"
+                  class="menu__image"
+                  src="<%=require('./images/plus.svg')%>"
                 />
-                <button class="menu__home-button" type="button">Home</button>
-              </div>
-              <div class="menu__add-poll">
-                <button class="menu_add-button" type="button">
-                  + New Poll
-                </button>
-              </div>
-            </div>
-          </section>
+                New Poll
+              </button>
+            </ul>
+          </nav>
           <section class="polls page__container">
             <ul class="polls__list">
               List of posts here
