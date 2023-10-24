@@ -1,6 +1,6 @@
 # se_codejam_Community Poll
 
-Designed to engage your audience with live polls
+Designed to Create, share, and decide together with our live polls app.
 
 **OverView**
 
