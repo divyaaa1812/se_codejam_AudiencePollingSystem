@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   devtool: "inline-source-map",
   entry: {
-    main: "./src/pages/index.js",
+    main: "./src/scripts/index.js",
     // favicon: "./src/images/favicon.ico",
   },
   output: {
