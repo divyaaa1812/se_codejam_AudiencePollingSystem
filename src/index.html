@@ -62,7 +62,11 @@
                 >
               </li>
 
-              <button class="menu__button" type="button">
+              <button
+                class="menu__button"
+                id="add-new-poll-button"
+                type="button"
+              >
                 <img
                   alt="Home icon"
                   class="menu__image"
@@ -148,6 +152,24 @@
                 required
               ></textarea>
               <span class="modal__input-error"></span>
+              <input
+                type="text"
+                class="modal__text-input"
+                placeholder="Option 1"
+                name="option1"
+                required
+                minlength="1"
+              />
+              <span class="modal__input-error"></span>
+              <input
+                type="text"
+                class="modal__text-input"
+                placeholder="Option 2"
+                name="name"
+                required
+                minlength="1"
+              />
+              <span class="modal__input-error"></span>
               <button class="modal__button" id="create-button" type="submit">
                 Create
               </button>
@@ -169,7 +191,7 @@
               </button>
             </form>
           </div>
-        </div> -->
+        </div>  -->
       </div>
     </div>
 
