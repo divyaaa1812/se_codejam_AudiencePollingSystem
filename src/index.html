@@ -10,6 +10,107 @@
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="page">
+      <div class="page__content">
+        <header class="header">
+          <img
+            src="<%=require('./images/logo.png')%>"
+            alt="Audience polling system logo"
+            class="logo"
+          />
+          <h1>Polling System</h1>
+        </header>
+        <main class="content">
+          <section class="menu page__container">
+            <div class="menu__sidebar-container">
+              <div class="menu__home">
+                <img alt="Home icon" class="menu__home-image" />
+                <button class="menu__home-button" type="button"></button>
+              </div>
+              <div class="menu__add-poll">
+                <button class="menu_add-button" type="button">
+                  Create New Poll
+                </button>
+              </div>
+            </div>
+            <div class="poll-container">
+              <div class="poll-question">What's your favorite color?</div>
+              <div class="poll-options">
+                <label class="poll-option">
+                  <input type="radio" name="color" value="red" /> Red
+                </label>
+                <label class="poll-option">
+                  <input type="radio" name="color" value="blue" /> Blue
+                </label>
+                <label class="poll-option">
+                  <input type="radio" name="color" value="green" /> Green
+                </label>
+                <label class="poll-option">
+                  <input type="radio" name="color" value="other" /> Other
+                </label>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer page__container">
+          <p class="footer__text">© 2023 Auidence Polling System.</p>
+        </footer>
+        <div class="modal js-modal" id="add-new-poll">
+          <div class="modal__content page__container">
+            <button class="modal__close-button" type="button"></button>
+            <form class="modal__form-content" id="add-poll-form-content">
+              <h2 class="modal__title">Create Poll</h2>
+              <input
+                type="text"
+                class="modal__text-input"
+                id="add-title-input"
+                placeholder="Title"
+                name="name"
+                required
+                minlength="1"
+                maxlength="100"
+              />
+              <input
+                type="text"
+                class="modal__text-input"
+                id="add-address-input"
+                placeholder="Address"
+                name="address"
+                required
+                minlength="1"
+              />
+              <span class="modal__input-error"></span>
+              <textarea
+                name="description"
+                type="textarea"
+                class="modal__text-input"
+                placeholder="Description"
+                id="description-input"
+                required
+              ></textarea>
+              <span class="modal__input-error"></span>
+              <button class="modal__button" id="create-button" type="submit">
+                Create
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="modal js-modal" id="delete-poll-confirm-modal">
+          <div class="modal__content page__container">
+            <button class="modal__close-button" type="button"></button>
+            <form class="modal__form-content" id="delete-poll-form-content">
+              <h2 class="modal__title">Are you sure?</h2>
+              <button
+                class="modal__button"
+                type="button"
+                id="delete-confirm-button"
+              >
+                Yes
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
