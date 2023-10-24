@@ -1,9 +1,10 @@
 body {
   margin: 0;
 }
+
 .page {
-  background-color: #000000;
-  color: white;
+  background-color: gray;
+  color: black;
 }
 
 .page__container {

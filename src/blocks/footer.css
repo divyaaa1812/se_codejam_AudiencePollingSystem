@@ -1,0 +1,18 @@
+.footer {
+  background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+  margin-left: 80px;
+  margin-right: 100px;
+  padding-top: 60px;
+}
+
+.footer__logo {
+  height: 21px;
+  width: 116px;
+}

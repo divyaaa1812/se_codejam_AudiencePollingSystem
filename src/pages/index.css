@@ -4,7 +4,4 @@
 @import url(../blocks/menu.css);
 @import url(../blocks/footer.css);
 @import url(../blocks/modal.css);
-
-body {
-  background-color: pink;
-}
+@import url(../blocks/polls.css);

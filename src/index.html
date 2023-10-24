@@ -20,40 +20,32 @@
           />
           <h1>Polling System</h1>
         </header>
-        <main class="content">
-          <section class="menu page__container">
+        <main class="content page__container">
+          <section class="menu">
             <div class="menu__sidebar-container">
               <div class="menu__home">
-                <img alt="Home icon" class="menu__home-image" />
-                <button class="menu__home-button" type="button"></button>
+                <img
+                  alt="Home icon"
+                  class="menu__home-image"
+                  src="<%=require('./images/home.png')%>"
+                />
+                <button class="menu__home-button" type="button">Home</button>
               </div>
               <div class="menu__add-poll">
                 <button class="menu_add-button" type="button">
-                  Create New Poll
+                  + New Poll
                 </button>
               </div>
             </div>
-            <div class="poll-container">
-              <div class="poll-question">What's your favorite color?</div>
-              <div class="poll-options">
-                <label class="poll-option">
-                  <input type="radio" name="color" value="red" /> Red
-                </label>
-                <label class="poll-option">
-                  <input type="radio" name="color" value="blue" /> Blue
-                </label>
-                <label class="poll-option">
-                  <input type="radio" name="color" value="green" /> Green
-                </label>
-                <label class="poll-option">
-                  <input type="radio" name="color" value="other" /> Other
-                </label>
-              </div>
-            </div>
+          </section>
+          <section class="polls page__container">
+            <ul class="polls__list">
+              List of posts here
+            </ul>
           </section>
         </main>
         <footer class="footer page__container">
-          <p class="footer__text">© 2023 Auidence Polling System.</p>
+          <p class="footer__text">© 2023 Auidence Polling System</p>
         </footer>
         <div class="modal js-modal" id="add-new-poll">
           <div class="modal__content page__container">
@@ -112,5 +104,19 @@
         </div>
       </div>
     </div>
+
+    <template id="poll-template">
+      <li class="poll">
+        <img class="poll__image" src="na" alt="" />
+        <div class="poll__description">
+          <h2 class="poll__title"></h2>
+          <div class="poll__fav-labels">
+            <button class="poll__fav-icon" type="button"></button>
+            <span class="poll__count"></span>
+          </div>
+          <button class="card__del-button" type="button"></button>
+        </div>
+      </li>
+    </template>
   </body>
 </html>
