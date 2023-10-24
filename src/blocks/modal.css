@@ -16,3 +16,37 @@
   opacity: 1;
   transition-delay: 0s;
 }
+
+.modal__form-content {
+  padding-top: 34px;
+  background-color: #ffffff;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.modal__content {
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  max-width: 430px;
+}
+
+.modal__close-button {
+  background: url(../images/Close\ Icon.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -48px;
+  right: -48px;
+  border: none;
+  background-size: contain;
+  padding: 0px;
+}
+
+.modal__close-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
