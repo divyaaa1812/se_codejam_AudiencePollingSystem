@@ -1,4 +1,4 @@
-# se_codejam_AudiencePollingSystem
+# se_codejam_Community Poll
 
 Designed to engage your audience with live polls
 
