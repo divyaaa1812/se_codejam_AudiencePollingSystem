@@ -48,6 +48,7 @@
   border-radius: 10px;
   background: #cf0a0a;
   color: #fff;
+  cursor: pointer;
 
   display: flex;
   padding: 10px 20px;

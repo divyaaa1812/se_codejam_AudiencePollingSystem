@@ -72,30 +72,39 @@
 }
 
 .modal__button {
-  margin-top: 48px;
-  height: 50.15px;
-  padding-left: 36px;
-  padding-right: 36px;
-  background: #000000;
-  color: #ffffff;
-  font-size: 18px;
-  font-family: "Inter", sans-serif;
-  width: 100%;
-  line-height: 22px;
   border: none;
+  border-radius: 10px;
+  background: #cf0a0a;
+  color: #fff;
+
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.modal__button:hover {
+  background: #a60202;
 }
 
 .modal__button_disabled {
   opacity: 0.2;
   border: 1px solid #000000;
-  border-radius: 2px;
+  border-radius: 10px;
   color: #000000;
   background-color: white;
   pointer-events: none;
 }
 
 .modal__button:hover {
-  opacity: 0.8;
   cursor: pointer;
 }
 
