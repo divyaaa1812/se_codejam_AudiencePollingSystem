@@ -26,57 +26,57 @@
             alt="Audience polling system logo"
             class="logo"
           />
-          <h1>Polling System</h1>
+          <p class="header__title">Porch poll</p class="header__title">
         </header>
-        <main class="content page__container">
-          <nav class="menu">
-            <ul class="menu__container">
-              <li class="menu__item">
-                <a class="menu__link" type="button">
-                  <img
-                    alt="Home icon"
-                    class="menu__image"
-                    src="<%=require('./images/home.svg')%>"
-                  />
-                  Home</a
-                >
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" type="button">
-                  <img
-                    alt="Home icon"
-                    class="menu__image"
-                    src="<%=require('./images/compass.svg')%>"
-                  />
-                  Discover</a
-                >
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" type="button">
-                  <img
-                    alt="Home icon"
-                    class="menu__image"
-                    src="<%=require('./images/bell.svg')%>"
-                  />
-                  Notification</a
-                >
-              </li>
 
-              <button
-                class="menu__button"
-                id="add-new-poll-button"
-                type="button"
-              >
+        <nav class="menu">
+          <ul class="menu__container">
+            <li class="menu__item">
+              <a class="menu__link" type="button">
                 <img
                   alt="Home icon"
                   class="menu__image"
-                  src="<%=require('./images/plus.svg')%>"
+                  src="<%=require('./images/home.svg')%>"
                 />
-                New Poll
-              </button>
-            </ul>
-          </nav>
-          <section class="polls page__container">
+                Home</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" type="button">
+                <img
+                  alt="Home icon"
+                  class="menu__image"
+                  src="<%=require('./images/compass.svg')%>"
+                />
+                Discover</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" type="button">
+                <img
+                  alt="Home icon"
+                  class="menu__image"
+                  src="<%=require('./images/bell.svg')%>"
+                />
+                Notification</a
+              >
+            </li>
+
+            <button class="menu__button" id="add-new-poll-button" type="button">
+              <img
+                alt="Home icon"
+                class="menu__image"
+                src="<%=require('./images/plus.svg')%>"
+              />
+              New Poll
+            </button>
+          </ul>
+        </nav>
+        <main class="content">
+          <section class="polls">
+            <h1 class="polls__heading">
+              👻 Tonight, the spirits next door cast their vote!
+            </h1>
             <ul class="polls__list">
               <li class="poll">
                 <div class="poll__header">
@@ -92,8 +92,7 @@
                       Spooky greetings! 🎃 Join us for a bewitching Halloween
                       soirée. A night where magic meets mischief and ghouls come
                       to dance. Dress in your eerie best, and prepare for a
-                      hauntingly good time. From chilling tunes to ghostly
-                      treats, we've got thrills awaiting. RSVP, if you dare, and
+                      hauntingly good time. RSVP, if you dare, and
                       be part of the most enchanting night of the year! 🦇👻 See
                       you at the witching hour!
                     </p>
@@ -102,12 +101,12 @@
                 <div class="poll__body">
                   <ul class="poll__list">
                     <li class="poll__list-item">
-                      <p class="poll__option">Ghosts and spiders</p>
-                      <div class="poll__votes">36</div>
+                      <p class="poll__option">🎃 Ghosts and spiders</p>
+                      <p class="poll__votes">36</p>
                     </li>
                     <li class="poll__list-item">
-                      <p class="poll__option">Pirates</p>
-                      <div class="poll__votes">25</div>
+                      <p class="poll__option">👻 Pirates</p>
+                      <p class="poll__votes">25</p>
                     </li>
                   </ul>
                 </div>
@@ -115,11 +114,11 @@
             </ul>
           </section>
         </main>
-        <footer class="footer page__container">
-          <p class="footer__text">© 2023 Auidence Polling System</p>
+        <footer class="footer">
+          <p class="footer__text">© 2023 Porch Poll</p>
         </footer>
         <div class="modal js-modal" id="add-new-poll">
-          <div class="modal__content page__container">
+          <div class="modal__content">
             <button class="modal__close-button" type="button"></button>
             <form class="modal__form-content" id="add-poll-form-content">
               <h2 class="modal__title">Create Poll</h2>
@@ -179,7 +178,7 @@
         </div>
         <!-- Future Improvement
           <div class="modal js-modal" id="delete-poll-confirm-modal">
-          <div class="modal__content page__container">
+          <div class="modal__content">
             <button class="modal__close-button" type="button"></button>
             <form class="modal__form-content" id="delete-poll-form-content">
               <h2 class="modal__title">Are you sure?</h2>
