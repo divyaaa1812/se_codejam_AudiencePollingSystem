@@ -56,14 +56,14 @@
   font-weight: 700;
 }
 
-.poll__list {
+.poll__options-list {
   list-style: none;
   padding: 0;
   display: grid;
   gap: 12px;
 }
 
-.poll__list-item {
+.poll__options-item {
   padding: 12px;
   border: 1px solid #dfdfdf;
   border-radius: 10px;
