@@ -6,7 +6,7 @@ import * as constant from "../utils/constants.js";
 const addNewPollPopup = new PopupWithForm(
   "#add-new-poll",
   handleAddNewPostFormSubmit,
-  "modal__button"
+  ".modal__button"
 );
 
 //instantiate FormValidator class
