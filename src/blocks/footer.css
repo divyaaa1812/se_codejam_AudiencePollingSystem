@@ -1,18 +1,8 @@
 .footer {
-  background: linear-gradient(180deg, #eff0f2 0%, #1c1c1c 100%);
-}
-
-.footer__content {
+  height: 100px;
+  background: #eee;
+  color: #535353;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  color: #fff;
-  margin-left: 80px;
-  margin-right: 100px;
-  padding-top: 60px;
-}
-
-.footer__logo {
-  height: 21px;
-  width: 116px;
+  justify-content: center;
+  align-items: center;
 }

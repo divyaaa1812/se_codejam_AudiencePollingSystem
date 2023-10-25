@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .page {
   font-family: "Figtree", sans-serif;
   font-weight: 400;
@@ -5,22 +8,15 @@
   color: #000;
 }
 
-.page__container {
-  margin: 0 auto;
-  max-width: 880px;
-  width: 100%;
-}
-
 .page__content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
 
 .content {
   display: flex;
-  margin-top: 40px;
-  margin-bottom: 51px;
+  margin-bottom: 50px;
   justify-content: space-around;
 }
 
