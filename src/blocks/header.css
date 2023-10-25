@@ -1,21 +1,35 @@
 .header {
   position: fixed;
+  display: flex;
+  justify-content: center;
   height: 80px;
   background: #cf0a0a;
   color: #fff;
   width: 100%;
   margin: 0 auto;
-  position: relative;
-
-  display: flex;
   gap: 20px;
   align-items: center;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+}
+
+.header__title {
+  font-size: 28px;
+  font-family: "Tilt Neon", sans-serif;
+  line-height: 28px;
+  font-stretch: 1.2;
+  margin: 0;
+}
+
 .logo {
-  padding-left: 27px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 .header:after {
@@ -30,13 +44,5 @@
 
 @media screen and (max-width: 980px) {
   .header {
-    padding-top: 28px;
-    padding-bottom: 32px;
-  }
-
-  .logo {
-    padding-left: 27px;
-    width: 126px;
-    height: 24px;
   }
 }
