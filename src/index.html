@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      lang="en"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audience Polling System</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- google fonts -->
@@ -26,23 +22,23 @@
             alt="Audience polling system logo"
             class="logo"
           />
-          <p class="header__title">Porch poll</p class="header__title">
+          <p class="header__title">Porch poll</p>
         </header>
 
         <nav class="menu">
           <ul class="menu__container">
             <li class="menu__item">
-              <a class="menu__link" type="button">
+              <a class="menu__link">
                 <img
                   alt="Home icon"
                   class="menu__image"
                   src="<%=require('./images/home.svg')%>"
                 />
-                Home</a
-              >
+                Home
+              </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" type="button">
+              <a class="menu__link">
                 <img
                   alt="Home icon"
                   class="menu__image"
@@ -52,7 +48,7 @@
               >
             </li>
             <li class="menu__item">
-              <a class="menu__link" type="button">
+              <a class="menu__link">
                 <img
                   alt="Home icon"
                   class="menu__image"
@@ -92,9 +88,9 @@
                       Spooky greetings! 🎃 Join us for a bewitching Halloween
                       soirée. A night where magic meets mischief and ghouls come
                       to dance. Dress in your eerie best, and prepare for a
-                      hauntingly good time. RSVP, if you dare, and
-                      be part of the most enchanting night of the year! 🦇👻 See
-                      you at the witching hour!
+                      hauntingly good time. RSVP, if you dare, and be part of
+                      the most enchanting night of the year! 🦇👻 See you at the
+                      witching hour!
                     </p>
                   </div>
                 </div>
@@ -122,52 +118,74 @@
             <button class="modal__close-button" type="button"></button>
             <form class="modal__form-content" id="add-poll-form-content">
               <h2 class="modal__title">Create Poll</h2>
+              <label class="modal__label" for="add-title-input">Title</label>
               <input
                 type="text"
                 class="modal__text-input"
                 id="add-title-input"
-                placeholder="Title"
                 name="name"
                 required
                 minlength="1"
                 maxlength="100"
               />
               <span class="modal__input-error"></span>
+              <label class="modal__label" for="add-address-input"
+                >Address</label
+              >
               <input
                 type="text"
                 class="modal__text-input"
                 id="add-address-input"
-                placeholder="Address"
                 name="address"
                 required
                 minlength="1"
                 maxlength="100"
               />
               <span class="modal__input-error"></span>
+              <label class="modal__label" for="image-link">Image Link</label>
+              <input
+                required
+                type="url"
+                id="image-link"
+                name="link"
+                class="modal__text-input"
+              />
+              <span class="modal__input-error"></span>
+              <label class="modal__label" for="description-input"
+                >Description</label
+              >
+
               <textarea
                 name="description"
-                type="textarea"
+                type="text"
                 class="modal__text-input"
-                placeholder="Description"
                 id="description-input"
                 required
-              ></textarea>
+                minlength="20"
+                maxlength="100"
+                rows="5"
+              >
+              </textarea>
               <span class="modal__input-error"></span>
+              <label class="modal__label" for="add-option1-input"
+                >1st Option</label
+              >
               <input
                 type="text"
                 class="modal__text-input"
                 id="add-option1-input"
-                placeholder="Option 1"
                 name="option"
                 required
                 minlength="1"
               />
               <span class="modal__input-error"></span>
+              <label class="modal__label" for="add-option2-input"
+                >2nd Option</label
+              >
               <input
                 type="text"
                 class="modal__text-input"
                 id="add-option2-input"
-                placeholder="Option 2"
                 name="option"
                 required
                 minlength="1"

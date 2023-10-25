@@ -18,57 +18,60 @@
 }
 
 .modal__form-content {
-  padding-top: 34px;
-  background-color: #ffffff;
-  padding-bottom: 20px;
-  border-radius: 10px;
+  display: grid;
+  background-color: #fff;
+  border-radius: 16px;
   box-sizing: border-box;
-  padding-left: 36px;
-  padding-right: 36px;
+  padding: 20px;
+  width: 600px;
 }
 
 .modal__content {
   margin: auto;
   border-radius: 10px;
   position: relative;
-  max-width: 430px;
+  max-width: 600px;
 }
 
 .modal__close-button {
-  background: url(../images/Close\ Icon.svg) no-repeat;
-  width: 40px;
-  height: 40px;
+  background: url(../images/x-circle.svg) no-repeat;
+  width: 32px;
+  height: 32px;
   position: absolute;
-  top: -48px;
-  right: -48px;
+  top: 12px;
+  right: 12px;
   border: none;
   background-size: contain;
   padding: 0px;
+  opacity: 0.5;
 }
 
 .modal__close-button:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .modal__title {
   font-size: 24px;
   line-height: 29px;
   margin-top: 0;
-  width: 100%;
-  font-family: "Inter", sans-serif;
+
   font-weight: 900;
   color: #000000;
 }
 
 .modal__text-input {
-  border: 1px solid #000000;
-  border-radius: 10px;
-  font-size: 14px;
-  line-height: 17px;
-  width: 100%;
-  height: 27px;
-  margin-top: 15px;
+  border-radius: 12px;
+  border: 1px solid #bdbdbd;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.modal__label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  margin-top: 4px;
 }
 
 .modal__button {
@@ -76,19 +79,18 @@
   border-radius: 10px;
   background: #cf0a0a;
   color: #fff;
-
   display: flex;
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
-
-  width: 160px;
+  width: 200px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-
   transition: all 0.3s;
   cursor: pointer;
+  justify-self: center;
+  margin-top: 10px;
 }
 
 .modal__button:hover {
@@ -107,11 +109,13 @@
 .modal__button:hover {
   cursor: pointer;
 }
+.modal__input-error {
+  height: 12px;
+  font-size: 12px;
+}
 
 .modal__input-error_visible {
   color: #ff0000;
-  font-size: 12px;
-  font-family: "Inter", sans-serif;
   border-color: #ff0000;
   outline: none;
 }
@@ -122,11 +126,6 @@
 
 .modal__image-caption {
   font-size: 10px;
-  font-family: "Inter", sans-serif;
-}
-
-#description-input {
-  height: 70px;
 }
 
 @media screen and (max-width: 500px) {
@@ -153,14 +152,6 @@
   .modal__close-button:hover {
     cursor: pointer;
     opacity: 0.8;
-  }
-
-  .modal__text-input {
-    margin-bottom: 0px;
-  }
-
-  .modal__text-input:first-of-type {
-    margin-bottom: 30px;
   }
 
   .modal__button {
