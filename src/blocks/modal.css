@@ -34,7 +34,7 @@
 }
 
 #description-input {
-  resize: vertical;
+  resize: none;
 }
 
 .modal__close-button {
