@@ -33,6 +33,10 @@
   max-width: 600px;
 }
 
+#description-input {
+  resize: vertical;
+}
+
 .modal__close-button {
   background: url(../images/x-circle.svg) no-repeat;
   width: 32px;
