@@ -7,3 +7,15 @@
   align-items: center;
   width: 100%;
 }
+
+.footer__text {
+  font-size: 14px;
+}
+
+.footer__link:visited {
+  color: #535353;
+}
+
+.footer__link:hover {
+  color: #1b1b1b;
+}

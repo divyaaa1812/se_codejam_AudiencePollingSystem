@@ -1,26 +1,47 @@
-/* @font-face {
-  font-family: "Inter";
+@font-face {
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./fonts/Inter\ Web/Inter-Regular.woff2?v=3.19") format("woff2"),
-    url("./fonts/Inter\ Web/Inter-Regular.woff?v=3.19") format("woff");
+  src: url("./fonts/Figtree\ Web/Figtree-Regular.woff2?v=3.19") format("woff2");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("./fonts/Inter\ Web/Inter-Medium.woff2?v=3.19") format("woff2"),
-    url("./fonts/Inter\ Web/Inter-Medium.woff?v=3.19") format("woff");
+  src: url("./fonts/Figtree\ Web/Figtree-Medium.woff2?v=3.19") format("woff2");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/Figtree\ Web/Figtree-SemiBold.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Figtree\ Web/Figtree-Bold.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("./fonts/Inter\ Web/Inter-Black.woff?v=3.19") format("woff2"),
-    url("./fonts/Inter\ Web/Inter-Black.woff2?v=3.19") format("woff");
-} */
+  src: url("./fonts/Figtree\ Web/Figtree-Black.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: "Tilt Neon";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/TiltNeon/TiltNeon-Regular.woff2?v=3.19") format("woff2");
+}
