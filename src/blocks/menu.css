@@ -2,6 +2,7 @@
   position: fixed;
   top: 140px;
   left: 5vw;
+  z-index: 101;
 }
 
 .menu__container {
