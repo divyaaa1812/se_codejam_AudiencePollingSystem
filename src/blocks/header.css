@@ -42,5 +42,15 @@
   position: absolute;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 750px) {
+  .header {
+    height: 80px;
+    background: #eee;
+    color: #000;
+  }
+
+  .header__container {
+    justify-content: flex-start;
+    width: 90vw;
+  }
 }

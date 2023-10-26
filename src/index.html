@@ -29,28 +29,17 @@
         <nav class="menu">
           <ul class="menu__container">
             <li class="menu__item">
-              <a class="menu__link">
-                <img
-                  alt="Home icon"
-                  class="menu__image"
-                  src="<%=require('./images/home.svg')%>"
-                />
-                Home
-              </a>
+              <a class="menu__link" href="#polls"></a>
             </li>
-
-            <button class="menu__button" id="add-new-poll-button" type="button">
-              <img
-                alt="Home icon"
-                class="menu__image"
-                src="<%=require('./images/plus.svg')%>"
-              />
-              New Poll
-            </button>
+            <button
+              class="menu__button"
+              id="add-new-poll-button"
+              type="button"
+            ></button>
           </ul>
         </nav>
         <main class="content">
-          <section class="polls">
+          <section id="polls" class="polls">
             <h1 class="polls__heading">
               👻 Tonight, the spirits next door cast their vote!
             </h1>
@@ -78,10 +67,12 @@
                 <div class="poll__body">
                   <ul class="poll__options-list">
                     <li class="poll__options-item">
-                      <p id="poll-option1" class="poll__option">🎃 Ghosts and spiders</p>
-                      <p class="poll__votes">36</p>
+                      <p id="poll-option1" class="poll__option">
+                        🎃 Ghosts and spiders
+                      </p>
+                      <p class="poll__votes poll__votes_hiden">36</p>
                     </li>
-                    <li class="poll__options-item">
+                    <li class="poll__options-item poll__options-item_reveal">
                       <p id="poll-option2" class="poll__option">👻 Pirates</p>
                       <p class="poll__votes">25</p>
                     </li>
