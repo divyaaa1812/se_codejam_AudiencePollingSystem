@@ -22,13 +22,13 @@ pollSection = new Section(
   {
     items: constant.pollsList,
     renderer: (data) => {
-      renderPoll(data, "#poll-template");
-      pollSection.addItem();
+      console.log(data)
+      pollSection.addItem(renderPoll(data, "#poll-template"));
     },
   },
   ".polls__list"
 );
-// pollSection.renderItems();
+pollSection.renderItems();
 
 const addNewPollPopup = new PopupWithForm(
   "#add-new-poll",
