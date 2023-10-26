@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audience Polling System</title>
+    <title>Community Polling System</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,13 +62,13 @@
                 </div>
                 <div class="poll__body">
                   <ul class="poll__options-list">
-                    <li class="poll__options-item">
+                    <li id="option-button-1" class="poll__options-item">
                       <p id="poll-option1" class="poll__option">
                         🎃 Ghosts and spiders
                       </p>
                       <p class="poll__votes">36</p>
                     </li>
-                    <li class="poll__options-item poll__options-item_reveal">
+                    <li id="option-button-2" class="poll__options-item poll__options-item_reveal">
                       <p id="poll-option2" class="poll__option">👻 Pirates</p>
                       <p class="poll__votes">25</p>
                     </li>
@@ -204,13 +204,13 @@
         </div>
         <div class="poll__body">
           <ul class="poll__options">
-            <li class="poll__option">
+            <li id="option-button-1" class="poll__option">
               <p id="poll-option1" class="poll__option-name"></p>
-              <div class="poll__votes"></div>
+              <div id="poll-vote1" class="poll__votes"></div>
             </li>
-            <li class="poll__option">
+            <li id="option-button-2" class="poll__option">
               <p id="poll-option2" class="poll__option-name"></p>
-              <div class="poll__votes"></div>
+              <div id="poll-vote2" class="poll__votes"></div>
             </li>
           </ul>
         </div>
