@@ -46,7 +46,6 @@ class FormValidator {
   }
 
   _enableButton() {
-    debugger;
     this._buttonElement.classList.remove(this._inactiveButtonSelector);
     this._buttonElement.removeAttribute("disabled", false);
   }
