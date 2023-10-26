@@ -17,11 +17,7 @@
       <div class="page__content">
         <header class="header">
           <div class="header__container">
-            <img
-              src="<%=require('./images/logo.png')%>"
-              alt="Audience polling system logo"
-              class="logo"
-            />
+            <div alt="Community Poll logo" class="header__logo"></div>
             <p class="header__title">Community poll</p>
           </div>
         </header>
@@ -134,12 +130,12 @@
                 placeholder="Example: What is your favourite costume color?"
                 name="description"
                 type="text"
-                class="modal__text-input"
+                class="modal__text-input modal_textarea"
                 id="description-input"
                 required
                 minlength="20"
                 maxlength="100"
-                rows="5"
+                rows="4"
               ></textarea>
               <span class="modal__input-error"></span>
               <label class="modal__label" for="add-option1-input"

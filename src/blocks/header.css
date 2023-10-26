@@ -26,7 +26,10 @@
   margin: 0;
 }
 
-.logo {
+.header__logo {
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  background-position: center;
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -52,5 +55,30 @@
   .header__container {
     justify-content: flex-start;
     width: 90vw;
+  }
+
+  .header__logo {
+    background-image: url(../images/logo-red.png);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    height: 60px;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+
+  .header__logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
   }
 }

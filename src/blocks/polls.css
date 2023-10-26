@@ -20,8 +20,12 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .polls__heading {
     font-size: 20px;
+  }
+
+  .polls {
+    margin: 30px auto;
   }
 }

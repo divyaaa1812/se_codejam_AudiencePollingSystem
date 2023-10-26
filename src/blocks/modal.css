@@ -30,10 +30,9 @@
   margin: auto;
   border-radius: 10px;
   position: relative;
-  max-width: 600px;
 }
 
-#description-input {
+.modal_textarea {
   resize: none;
 }
 
@@ -57,22 +56,20 @@
 
 .modal__title {
   font-size: 24px;
-  line-height: 29px;
+  line-height: 24px;
   margin-top: 0;
-
   font-weight: 900;
-  color: #000000;
 }
 
 .modal__text-input {
   border-radius: 12px;
   border: 1px solid #bdbdbd;
   font-size: 14px;
-  padding: 12px;
+  padding: 8px;
 }
 
 .modal__label {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 2px;
   margin-top: 4px;
@@ -102,12 +99,11 @@
 }
 
 .modal__button_disabled {
-  opacity: 0.2;
+  opacity: 0.4;
   border: 1px solid #000000;
-  border-radius: 10px;
   color: #000000;
-  background-color: white;
   pointer-events: none;
+  background-color: #fff;
 }
 
 .modal__button:hover {
@@ -133,42 +129,4 @@
 }
 
 @media screen and (max-width: 500px) {
-  .modal__content {
-    max-width: 282px;
-    width: 100%;
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
-  .modal__title {
-    max-width: 282px;
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 75px;
-  }
-
-  .modal__close-button {
-    width: 26px;
-    height: 26px;
-    right: 0px;
-  }
-
-  .modal__close-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-
-  .modal__button {
-    padding-left: 22px;
-    padding-right: 22px;
-    margin-top: 45px;
-    font-size: 14px;
-    line-height: 17px;
-    cursor: pointer;
-    border: none;
-  }
-}
-
-.modal-preview-image {
-  width: 100%;
 }

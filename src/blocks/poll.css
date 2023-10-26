@@ -101,6 +101,7 @@
 
 @media screen and (max-width: 600px) {
   .poll {
+    width: 100%;
     border-radius: 0;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
     max-width: 540px;

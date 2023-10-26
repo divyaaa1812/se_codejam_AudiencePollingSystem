@@ -21,8 +21,8 @@ body {
   flex-grow: 1;
 }
 
-@media screen and (max-width: 918px) {
-  .page__container {
-    max-width: calc(100% - 38px);
+@media screen and (max-width: 450px) {
+  .content {
+    margin-top: 60px;
   }
 }

@@ -90,3 +90,22 @@
     width: auto;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .menu {
+    width: auto;
+    top: 14px;
+    right: 14px;
+    left: auto;
+  }
+
+  .menu__button {
+    height: 32px;
+    width: 32px;
+  }
+
+  .menu__item {
+    height: 32px;
+    width: 32px;
+  }
+}
