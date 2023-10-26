@@ -17,7 +17,7 @@ export const pollsList = [
   },
 ];
 
-export const pollWrapper = document.querySelector('.polls__list')
+export const pollTemplate = '#poll-template';
 
 export const settings = {
   inputElementSelector: ".modal__text-input",

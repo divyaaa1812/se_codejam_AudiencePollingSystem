@@ -7,35 +7,17 @@ import * as constant from "../utils/constants.js";
 
 let pollSection = null;
 
-function renderPoll({ title, description, options }) {
-  const poll = new Poll({ title, description, options });
-  return poll;
-}
-
-function createPollObj ({title, image, description, option1, option2}) {
-  const pollObj = {
-    title,
-    image,
-    description,
-    options: [
-      {
-        option1,
-        option1Votes: 0,
-      },
-      {
-        option2,
-        option2Votes: 0,
-      }
-    ]
-  }
-  return pollObj;
+function renderPoll({ title, description, option1, option2, option1Votes, option2Votes }, pollSelector) {
+  const poll = new Poll({ title, description, option1, option2, option1Votes, option2Votes }, pollSelector);
+  return poll.getPoll();
 }
 
 pollSection = new Section(
   {
     items: constant.pollsList,
     renderer: (data) => {
-      pollSection.addItem(renderPoll(data));
+      renderPoll(data, '#poll-template')
+      pollSection.addItem();
     },
   },
   ".polls__list"
@@ -45,8 +27,8 @@ pollSection = new Section(
 const addNewPollPopup = new PopupWithForm(
   "#add-new-poll",
   (pollData) => {  
-    console.log(createPollObj(pollData));
-    // pollSection.addItem(renderPoll(pollData))
+    const pollObj = {...pollData, option1Votes: 0, option2Votes: 0}
+    pollSection.addItem(renderPoll(pollObj, '#poll-template'))
     addNewPollPopup.closeModal();
   },
   ".modal__button"
