@@ -23,10 +23,11 @@
   border-radius: 16px;
   box-sizing: border-box;
   padding: 20px;
-  width: 600px;
 }
 
 .modal__content {
+  max-width: 600px;
+  width: 100%;
   margin: auto;
   border-radius: 10px;
   position: relative;
@@ -128,5 +129,24 @@
   font-size: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
+  .modal__form-content {
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal {
+    margin-top: 80px;
+  }
+  .modal__title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .modal__text-input {
+    border-radius: 12px;
+    border: 1px solid #bdbdbd;
+    font-size: 14px;
+    padding: 8px;
+  }
 }
