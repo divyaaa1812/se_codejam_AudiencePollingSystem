@@ -33,7 +33,19 @@ pollSection = new Section(
 const addNewPollPopup = new PopupWithForm(
   "#add-new-poll",
   (pollData) => {
-    const pollObj = { ...pollData, option1Votes: 0, option2Votes: 0 };
+    const pollObj = {
+      ...pollData,
+      option1Votes: 0,
+      option2Votes: 0,
+      handleVoting: (option) => {
+        if (option === "_option1Votes") {
+          this._option1Votes++;
+        } else {
+          this._option2Votes++;
+        }
+        this.renderVotes();
+      },
+    };
     pollSection.addItem(renderPoll(pollObj, "#poll-template"));
     addNewPollPopup.closeModal();
   },
