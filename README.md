@@ -8,6 +8,7 @@ Designed to Create, share, and make choices together with our live polls app.
 - Technologies
 - Figma
 - Live Site
+- Future Features**
 
 **Description**
 
@@ -26,3 +27,11 @@ Our community poll web app empowers your voice by allowing you to create and par
 **Live Site**
 
 - [https://divyaaa1812.github.io/se_codejam_AudiencePollingSystem/]
+
+**Future Feature**
+
+- add discovery section to view popular pols
+- filter by city to view the polls in your community
+- account creation to track users to prevent double voting 
+- ability to delete polls that creator has created
+- catagories such as events, public decision making and more
