@@ -1,12 +1,13 @@
 # se_codejam_Community Poll
 
-Designed to Create, share, and decide together with our live polls app.
+Designed to Create, share, and make choices together with our live polls app.
 
 **Overview**
 
 - Description
 - Technologies
-- Website Link
+- Figma
+- Live Site
 
 **Description**
 
@@ -17,3 +18,11 @@ Our community poll web app empowers your voice by allowing you to create and par
 - HTML
 - CSS
 - JavaScript
+
+**Figma**
+
+- [https://www.figma.com/file/g7c5hSclvSjsWbRIFmmTSr/Untitled?type=design&node-id=0%3A1&mode=design&t=4wTsZcWPkU0VCTHw-1]
+
+**Live Site**
+
+- [https://divyaaa1812.github.io/se_codejam_AudiencePollingSystem/]
