@@ -8,11 +8,11 @@ import * as constant from "../utils/constants.js";
 let pollSection = null;
 
 function renderPoll(
-  { title, description, option1, option2, option1Votes, option2Votes },
+  { title, description, option1, option2, option1Votes, option2Votes, image },
   pollSelector
 ) {
   const poll = new Poll(
-    { title, description, option1, option2, option1Votes, option2Votes },
+    { title, description, option1, option2, option1Votes, option2Votes, image },
     pollSelector
   );
   return poll.getPoll();
@@ -22,7 +22,7 @@ pollSection = new Section(
   {
     items: constant.pollsList,
     renderer: (data) => {
-      console.log(data)
+      console.log(data);
       pollSection.addItem(renderPoll(data, "#poll-template"));
     },
   },
