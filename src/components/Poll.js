@@ -59,10 +59,10 @@ export default class Poll {
   renderVotes() {
     // const [option1Votes, option2Votes] = this._calcPercentOfVotes(this._option1Votes, this._option2Votes)
     this._option1VoteElement.textContent = `${this._option1Votes} ${
-      this._option1Votes <= 1 ? "vote" : "votes"
+      this._option1Votes === 1 ? "vote" : "votes"
     }`;
     this._option2VoteElement.textContent = `${this._option2Votes} ${
-      this._option2Votes <= 1 ? "vote" : "votes"
+      this._option2Votes === 1 ? "vote" : "votes"
     }`;
   }
 

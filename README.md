@@ -1,6 +1,6 @@
 # se_codejam_Community Poll
 
-Designed to Create, share, and decide together with our live polls app.
+Designed to Create, share, and make choices together with our live polls app.
 
 **Overview**
 
