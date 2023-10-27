@@ -78,8 +78,7 @@ export default class Poll {
     this._pollElement.querySelector(".poll__title").textContent = this._title;
     this._pollElement.querySelector(".poll__description").textContent =
       this._description;
-    this._pollElement.querySelector(".poll__image").src =
-      "https://img.freepik.com/free-vector/hand-drawn-flat-halloween-background_23-2149077569.jpg?w=1060&t=st=1698369662~exp=1698370262~hmac=9904434fbbd93064823019156dff8658c31eff95df1dc3ddc5b873a56612f5d8";
+    this._pollElement.querySelector(".poll__image").src = this._image;
     this._pollElement.querySelector("#poll-option1").textContent =
       this._option1;
     this._pollElement.querySelector("#poll-option2").textContent =
