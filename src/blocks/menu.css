@@ -21,15 +21,18 @@
 .menu__item {
   list-style: none;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: flex-start;
+}
 
+.menu__link {
+  display: inline-block;
   background-image: url(../images/link-home.svg);
   background-position: center;
   background-repeat: no-repeat;
   width: 86px;
   height: 44px;
-  cursor: pointer;
-  transition: all 0.3s;
-  align-self: flex-start;
 }
 
 .menu__item:hover {
@@ -69,7 +72,7 @@
     width: 44px;
   }
 
-  .menu__item {
+  .menu__link {
     background-image: url(../images/home.svg);
     background-color: #fff;
     width: 44px;
@@ -105,7 +108,7 @@
     width: 32px;
   }
 
-  .menu__item {
+  .menu__link {
     height: 32px;
     width: 32px;
   }
