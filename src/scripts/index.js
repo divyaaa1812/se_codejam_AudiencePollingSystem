@@ -22,7 +22,6 @@ pollSection = new Section(
   {
     items: constant.pollsList,
     renderer: (data) => {
-      console.log(data)
       pollSection.addItem(renderPoll(data, "#poll-template"));
     },
   },
@@ -32,15 +31,7 @@ pollSection.renderItems();
 
 const addNewPollPopup = new PopupWithForm(
   "#add-new-poll",
-  (pollData) => {
-    const pollObj = {
-      ...pollData,
-      option1Votes: 0,
-      option2Votes: 0,
-    };
-    pollSection.addItem(renderPoll(pollObj, "#poll-template"));
-    addNewPollPopup.closeModal();
-  },
+  handleAddNewPostFormSubmit,
   ".modal__button"
 );
 
@@ -55,8 +46,14 @@ function handleOpenNewPollForm() {
   addNewPollPopup.openModal();
 }
 
-function handleAddNewPostFormSubmit() {
-  console.log("Form submitted successfully");
+function handleAddNewPostFormSubmit(pollData) {
+  const pollObj = {
+    ...pollData,
+    option1Votes: 0,
+    option2Votes: 0,
+  };
+  pollSection.addItem(renderPoll(pollObj, "#poll-template"));
+  addNewPollPopup.closeModal();
 }
 
 /* Event Listeners */
